@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h1 {
+        width: 200px;
+        background-color: gold;
+        transition-property: width;
+        transition-delay: 1s;
+        transition-duration: 3s;
+      }
+      h1:hover {
+        width: 500px;
+        background-color: aquamarine;
+        transition-property: width, background-color;
+        /* transition-property: background-color; */
+        transition-delay: 1s;
+        transition-duration: 5s;
+      }
+      @keyframes bgchange {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: orange;
+        }
+        50% {
+          background-color: yellow;
+        }
+        75% {
+            background-color: green;
+        }
+        95% {
+          background-color: skyblue;
+        }
+        100% {
+          background-color: plum;
+        }
+      }
+      h2 {
+        width: 100px;
+        height: 100px;
+        /* background-color: plum; */
+        animation-fill-mode: forwards;
+        animation-name: bgchange;
+        animation-duration: 5s;
+        animation-direction:alternate-reverse;
+        animation-iteration-count: infinite;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>트랜지션</h1>
+
+    <br />
+
+    <h2>애니메이션</h2>
+  </body>
+</html>

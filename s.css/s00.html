@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--              상대 경로
+        - 현재 파일을 기준으로 경로를 탐색
+        - (.)은 현재 위치를 뜻
+        - (..)은 현재 위치의 상위를 뜻함
+        - (/)는 대상이 되는 위치의 하위를 뜻함
+        - 경로가 복잡해짐
+        - 기준이 되는 현재 파일의 위치가 변경이 되면 다시 경로를 세팅해야함
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\one\one.css">
+    <link rel="stylesheet" href="/one/two/three/three.css">
+    <link rel="stylesheet" href="/first/second/second.css">
+    <link rel="stylesheet" href="/first/second/third/fourth/fourth.css">
+
+    <!-- 
+                              절대 경로
+        - 열려 있는 프로젝트 폴더를 기준으로 탐색
+        - (/)는 대상이 되는 위치의 하위를 뜻함
+        - 맨 왼쪽에는 (/)를 사용함
+        - 맨 왼쪽에 (.) 또는 (..)을 사용함
+        - 경로가 깔끔함
+        - 프로젝트 폴더가 바뀌면 다시 경로를 세팅해야함
+     -->
+    <link rel="stylesheet" href=".\one\one.css">
+    <link rel="stylesheet" href="./one/two/three/three.css">
+    <link rel="stylesheet" href="./first/second/second.css">
+    <link rel="stylesheet" href="./first/second/third/fourth/fourth.css">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

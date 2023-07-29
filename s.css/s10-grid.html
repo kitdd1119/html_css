@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        .container {
+            display: grid;
+            height: 200px;
+            grid-template-columns: 100px 100px 1fr; /* fr은 fr끼리 나눠지고 아닌 경우 모든 칸을 차지 */
+            /* grid-template-columns: 2fr 8fr 2fr; 12칸 중에 사용될 칸을 정하는 것 */
+            /* grid-template-columns: auto auto auto auto auto;  한 행에 5개 */
+            /* grid-template-columns: repeat(5, auto); 위와 동일 repeat 사용*/
+            justify-content: center; /* content와 items를 구분하여 사용해보기*/
+            align-content: center;
+            /* gap: 10px; 상하좌우로 10px만큼 띄워 표현 */
+            /* row-gap: 10px 이는 상하로 10px만큼 띄워 표현 */
+            column-gap: 10px; /*이는 좌우로 10px만큼 띄워 표현*/
+        }
+
+        .item {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+</body>
+</html>

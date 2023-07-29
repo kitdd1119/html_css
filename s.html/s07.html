@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border>
+        <thead>
+            <tr>
+                <!-- th는 찐한 글자 -->
+                <th>이름</th>
+                <th>나이</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- td는 일반 글자 -->
+                <td>홍길동</td>
+                <td rowspan="2">15</td>
+                <!-- 열 병합 -->
+            </tr>
+            <tr>
+                <td>박남길</td>
+            </tr>
+            <tr>
+                <!--  행 병합  -->
+                <td colspan="2">엄준식</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

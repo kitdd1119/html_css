@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            background-color: red;
+            height: 100px;
+        }
+
+        span {
+            background-color: blue;
+            height: 100px;
+            /* inline 태그인 span태그는 높이와 넓이가 세팅이 되지 않는다. */
+            
+        }
+        
+        .ib {
+            background-color: green;
+            height: 100px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>블록 태그입니다.</div>
+    <!-- <span>인라인 태그입니다.</span> -->
+    <!-- <span>인라인 태그입니다.</span> -->
+    <div class="ib" style="display: inline-block;">인라인 불록 태그입니다.</div>
+    <!-- 
+         "ib" 라는 CSS 클래스를 가진 <div> 요소를 생성하고, 
+            해당 요소를 인라인으로 배치하면서도 크기와 여백을 조정할 수 있도록 설정하는 것입니다.
+     -->
+    <div class="ib" style="display: inline-block;">인라인 불록 태그입니다.</div>
+    <div> 
+        <div><a href="https://www.google.com">구글</a></div>
+        <div>
+            <a href="https://www.naver.com">네이버</a>
+        </div>
+        <div>
+            <a href="https://aws.amazon.com/ko">AWS</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .ib {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: salmon;
+        }
+        .s {
+            position: relative;
+            top: 25px; 
+        }
+        .t {
+            position: absolute;
+            background-color: yellowgreen;
+            top: 10px;
+            left: 10px;
+        }
+        .fi {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="ib fi">1</div>
+    <div class="ib s">2</div>
+    <div class="ib t">3</div>
+    <div class="ib">4</div>
+</body>
+</html>
